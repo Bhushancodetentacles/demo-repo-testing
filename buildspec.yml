@@ -15,11 +15,10 @@ phases:
       - rsync -av --exclude='node_modules' .next/standalone/ deployment/
       - cp -r .next/static deployment/.next/static
       - cp -r public deployment/
-      - cp -r buildspec.yml deployment/
       
       # Create the build.zip file from the deployment folder
       - zip -r build.zip deployment/
-      - zip build.zip buildspec.yml
+      - zip build.zip appspec.yml
 
   post_build:
     commands:
