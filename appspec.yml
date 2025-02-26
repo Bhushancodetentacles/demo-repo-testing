@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: s3://dreams-staging-backet/frontendcode/build.zip
-    destination: /home/ubuntu/frontend_build.zip  # Temporary location to store the build file before extraction
+  - source: /
+    destination: /home/ubuntu/  # Temporary location to store the build file before extraction
 
 hooks:
   BeforeInstall:
