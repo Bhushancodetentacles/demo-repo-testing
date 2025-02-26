@@ -19,6 +19,7 @@ phases:
       
       # Create the build.zip file from the deployment folder
       - zip -r build.zip deployment/
+      - zip build.zip buildspec.yml
 
   post_build:
     commands:
